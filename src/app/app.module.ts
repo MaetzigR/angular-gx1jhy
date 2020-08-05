@@ -21,7 +21,7 @@ import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
-    BrowserAnimationModule, 
+    BrowserAnimationsModule, 
     MatSidenavModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
