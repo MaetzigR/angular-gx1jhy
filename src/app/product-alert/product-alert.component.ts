@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 
 @Component({
-  selector: 'app-product-alert',
-  templateUrl: './product-alert.component.html',
-  styleUrls: ['./product-alert.component.css']
+  selector: 'app-product-alerts',
+  templateUrl: './product-alerts.component.html',
+  styleUrls: ['./product-alerts.component.css']
 })
+
 export class ProductAlertComponent implements OnInit {
 
   @Input() product; 
