@@ -13,11 +13,16 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   imports: [
     HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
+    BrowserAnimationModule, 
+    MatSidenavModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
