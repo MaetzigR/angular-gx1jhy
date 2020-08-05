@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ChangeDetectorRef } from '@angular/core';
+import { SidebarSwipeService } from './sidebar-swipe.service';
+import { SetGetWidthSidebarPipe } from './set-get-width-sidebar.pipe';
 
 @Component({
   selector: 'app-root',
