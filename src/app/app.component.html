@@ -1,8 +1,27 @@
-<app-top-bar></app-top-bar>
+<mat-sidenav-container class="example-container">
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+   <mat-sidenav [ngStyle]="{'width': width  +'%' }"
+   [sideNav] = "sidenav" (setWidth) = "setWidth ($event) "
+    appOpenSidebarOnSwipe #sidenav mode = "over" >            
+      <mat-toolbar color="accent">
+          <span> Shop Smart </span>
+      </mat-toolbar>
+   </mat-sidenav>
+   <mat-sidenav-content>
+     <mat-toolbar color="warn">
+        <button mat-mini-fab color="primary" (click)="sidenav.open()" >
+          <mat-icon> menu</mat-icon>
+       </button>
+        <app-top-bar></app-top-bar>
+      </mat-toolbar>
+     <div class="container">
+          <router-outlet></router-outlet>
+        </div>
+   </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

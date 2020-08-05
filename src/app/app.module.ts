@@ -16,13 +16,23 @@ import { ShippingComponent } from './shipping/shipping.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import { OpenSidebarOnSwipeDirective } from './open-sidebar-on-swipe.directive';
+import { SidebarSwipeService } from './sidebar-swipe.service';
+import { SetGetWidthSidebarPipe } from './set-get-width-sidebar.pipe';
+
 @NgModule({
   imports: [
     HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
     BrowserAnimationsModule, 
-    MatSidenavModule,
+    MatSidenavModule, 
+    MatToolbarModule, 
+    MatButtonModule,
+    MatIconModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
@@ -37,10 +47,12 @@ import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductAlertComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    OpenSidebarOnSwipeDirective,
+    SetGetWidthSidebarPipe
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService]
+  providers: [CartService, SidebarSwipeService]
 })
 export class AppModule { }
 
