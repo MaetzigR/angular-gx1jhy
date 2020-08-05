@@ -11,7 +11,14 @@ p {
 }
 
 mat-sidenav{
-  background: rgb(76, 44, 194)
+  background: #1976d2;
+  color:#eee;
+  opacity: 80%;
+}
+
+mat-toolbar{
+  background:#eee;
+  color:black;
 }
 
 @media (min-width: 576px) {
