@@ -22,7 +22,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { OpenSidebarOnSwipeDirective } from './open-sidebar-on-swipe.directive';
 import { SidebarSwipeService } from './sidebar-swipe.service';
 import { SetGetWidthSidebarPipe } from './set-get-width-sidebar.pipe';
-import { SwiperComponent } from './swiper.component.ts';
+import { SwiperComponent } from './swiper.component';
 
 
 @NgModule({
