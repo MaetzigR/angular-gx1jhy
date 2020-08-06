@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -22,7 +22,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { OpenSidebarOnSwipeDirective } from './open-sidebar-on-swipe.directive';
 import { SidebarSwipeService } from './sidebar-swipe.service';
 import { SetGetWidthSidebarPipe } from './set-get-width-sidebar.pipe';
-import { SwiperComponent } from './swiper/swiper.component';
+import { SwiperComponent } from './swiper.component.ts';
 
 
 @NgModule({
@@ -30,6 +30,7 @@ import { SwiperComponent } from './swiper/swiper.component';
     HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule, 
     MatSidenavModule, 
     MatToolbarModule, 
@@ -53,7 +54,6 @@ import { SwiperComponent } from './swiper/swiper.component';
     OpenSidebarOnSwipeDirective,
     SetGetWidthSidebarPipe,
     SwiperComponent,
-
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService, SidebarSwipeService]
