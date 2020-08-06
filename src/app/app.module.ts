@@ -24,7 +24,7 @@ import { SidebarSwipeService } from './sidebar-swipe.service';
 import { SetGetWidthSidebarPipe } from './set-get-width-sidebar.pipe';
 import { SwipeDemoComponent } from './swipe-demo/swipe-demo.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
-import { Swiper } from 'swiper';
+
 
 
 @NgModule({
@@ -38,7 +38,7 @@ import { Swiper } from 'swiper';
     MatToolbarModule, 
     MatButtonModule,
     MatIconModule,
-    Swiper,
+ 
     NgxUsefulSwiperModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
