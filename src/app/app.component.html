@@ -1,11 +1,11 @@
 <mat-sidenav-container class="example-container">
 
-   <mat-sidenav [ngStyle]="{'width': width  +'%' }"
-   [sideNav] = "sidenav" (setWidth) = "setWidth ($event) "
-    appOpenSidebarOnSwipe #sidenav mode = "over" >             
+   <mat-sidenav 
+    mode = "over" #sidenav>             
       <mat-toolbar color="white">
-          <span> Shop Smart </span>
+          <span> Nav Menue </span>
       </mat-toolbar>
+      <p>test</p>
    </mat-sidenav>
    <mat-sidenav-content>
      <mat-toolbar color="warn">
