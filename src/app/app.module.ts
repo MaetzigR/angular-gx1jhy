@@ -22,7 +22,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { OpenSidebarOnSwipeDirective } from './open-sidebar-on-swipe.directive';
 import { SidebarSwipeService } from './sidebar-swipe.service';
 import { SetGetWidthSidebarPipe } from './set-get-width-sidebar.pipe';
-import { SwiperComponent } from './swiper/swiper.component';
+import { SwipeDemoComponent } from './swipe-demo/swipe-demo.component';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { Swiper } from 'swiper';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { SwiperComponent } from './swiper/swiper.component';
     MatToolbarModule, 
     MatButtonModule,
     MatIconModule,
-
+    Swiper,
+    NgxUsefulSwiperModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
@@ -54,7 +57,8 @@ import { SwiperComponent } from './swiper/swiper.component';
     ShippingComponent,
     OpenSidebarOnSwipeDirective,
     SetGetWidthSidebarPipe,
-    SwiperComponent,
+    SwipeDemoComponent,
+
  
   ],
   bootstrap: [ AppComponent ],
