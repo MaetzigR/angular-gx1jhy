@@ -3,7 +3,7 @@
   <div class="swiper-wrapper">
 
     <div class="swiper-slide" *ngFor="let slide of slideData">
-      <img src="https://i.picsum.photos/id/{{slide.id}}/400/300.jpg" />
+      <img src="{{slide.url}}" />
       {{slide.name}}
     </div>
 

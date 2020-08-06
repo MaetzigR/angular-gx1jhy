@@ -15,33 +15,43 @@ export class SwipeDemoComponent {
     {
       id: 382,
       name: "Metal bluetooth cyan",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/8773Pililla_Rizal_Barangays_Proper_27.jpg/320px-8773Pililla_Rizal_Barangays_Proper_27.jpg"
     }, {
       id: 822,
       name: "Avon",
+      url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pauluskirche_Glockenturm.jpg"
     }, {
       id: 159,
       name: "Infrastructures",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/8773Pililla_Rizal_Barangays_Proper_27.jpg/320px-8773Pililla_Rizal_Barangays_Proper_27.jpg"
     }, {
       id: 424,
       name: "Users Cotton",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/8773Pililla_Rizal_Barangays_Proper_27.jpg/320px-8773Pililla_Rizal_Barangays_Proper_27.jpg"
     }, {
       id: 572,
       name: "Haptic Oklahoma Jewelery",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/8773Pililla_Rizal_Barangays_Proper_27.jpg/320px-8773Pililla_Rizal_Barangays_Proper_27.jpg"
     }, {
       id: 127,
       name: "Circles Integration Street",
+      url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pauluskirche_Glockenturm.jpg"
     }, {
       id: 1009,
       name: "uniform Communications Tuna",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/8773Pililla_Rizal_Barangays_Proper_27.jpg/320px-8773Pililla_Rizal_Barangays_Proper_27.jpg"
     }, {
       id: 619,
       name: "North Carolina",
+      url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pauluskirche_Glockenturm.jpg"
     }, {
       id: 716,
       name: "Eyeballs Rubber",
+      url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pauluskirche_Glockenturm.jpg"
     }, {
       id: 382,
       name: "Nevada green unleash",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/8773Pililla_Rizal_Barangays_Proper_27.jpg/320px-8773Pililla_Rizal_Barangays_Proper_27.jpg"
     }
   ]
 
