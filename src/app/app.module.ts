@@ -23,7 +23,7 @@ import { OpenSidebarOnSwipeDirective } from './open-sidebar-on-swipe.directive';
 import { SidebarSwipeService } from './sidebar-swipe.service';
 import { SetGetWidthSidebarPipe } from './set-get-width-sidebar.pipe';
 import { SwiperComponent } from './swiper.component';
-
+import { Swiper } from 'swiper';
 
 @NgModule({
   imports: [
@@ -36,6 +36,7 @@ import { SwiperComponent } from './swiper.component';
     MatToolbarModule, 
     MatButtonModule,
     MatIconModule,
+    Swiper,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
