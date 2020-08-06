@@ -1,9 +1,10 @@
 <h2>Product Details</h2>
 
-<div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
+<div ng-controller="fancySwipeCtrl">
+  <div class="swipe" swipe-left="delayedClose" swipe-right="delayedClose" left-template="leftTemplate.html" right-template="rightTemplate.html" *ngIf="product">
+    <h3>{{ product.name }}</h3>
+    <h4>{{ product.price | currency }}</h4>
+    <p>{{ product.description }}</p>
+  </div>
 </div>
-
 <button (click)="addToCart(product)">Buy</button>

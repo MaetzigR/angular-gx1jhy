@@ -22,7 +22,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { OpenSidebarOnSwipeDirective } from './open-sidebar-on-swipe.directive';
 import { SidebarSwipeService } from './sidebar-swipe.service';
 import { SetGetWidthSidebarPipe } from './set-get-width-sidebar.pipe';
-import { ListviewSwipeComponent } from './listview-swipe/listview-swipe.component';
+
 
 @NgModule({
   imports: [
@@ -51,7 +51,7 @@ import { ListviewSwipeComponent } from './listview-swipe/listview-swipe.componen
     ShippingComponent,
     OpenSidebarOnSwipeDirective,
     SetGetWidthSidebarPipe,
-    ListviewSwipeComponent
+
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService, SidebarSwipeService]
