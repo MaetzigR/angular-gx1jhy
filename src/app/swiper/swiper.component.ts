@@ -1,8 +1,9 @@
 
 import {Component, OnInit,ElementRef, AfterViewInit} from '@angular/core';
+import { Swiper } from 'swiper';
 
 // Don't forget to declare Global variable related to Swiper.
-declare var Swiper: any;
+
 
 @Component({
   selector: 'swiper',
@@ -11,7 +12,7 @@ declare var Swiper: any;
 })
 export class SwiperComponent implements AfterViewInit {
   	constructor(private elementRef: ElementRef) {}
-    
+   swiper; 
 	//[...]
 	
 	ngAfterViewInit() {
