@@ -72,6 +72,7 @@ export class SwipeDemoComponent {
     },
     initialSlide: 1,
     centeredSlides: false,
+    slidesPerView: 'auto',
    /* breakpoints: {
       1024: {
         slidesPerView: 4
@@ -90,7 +91,7 @@ export class SwipeDemoComponent {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    loop: true,
+    loop: false,
     on: {
       slideChange: () => {
         //console.log('slideChange Event: Active Slide Index = ', this.usefulSwiper.swiper.activeIndex);
