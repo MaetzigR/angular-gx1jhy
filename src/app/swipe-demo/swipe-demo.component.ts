@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit  } from '@angular/core';
 import { SwiperOptions } from 'swiper';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { SwiperComponent } from 'ngx-useful-swiper';
+import { Swiper } from 'swiper';
 
 @Component({
   selector: 'app-swipe-demo',
   templateUrl: './swipe-demo.component.html',
   styleUrls: ['./swipe-demo.component.css']
 })
+
+
 export class SwipeDemoComponent {
 
- 
+  @ViewChild('usefulSwiper', { static: false }) usefulSwiper: SwiperComponent;
+  
   title = 'ng-swiper-demo';
 
   slideData = [
@@ -85,10 +90,19 @@ export class SwipeDemoComponent {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    loop: false
+    loop: false,
+    on: {
+      slideChange: () => {
+        console.log('slideChange Event: Active Slide Index = ', this.usefulSwiper.swiper.activeIndex);
+
+      },
+      slideChangeTransitionEnd: () => {
+        console.log('slideChange Event');
+      }
+    }
   };
 
-   usefulSwiper: SwiperComponent;
+ 
 
 
   //Methods

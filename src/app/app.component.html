@@ -7,6 +7,7 @@
       </mat-toolbar>
       <p>test</p>
    </mat-sidenav>
+   
    <mat-sidenav-content>
      <mat-toolbar color="warn">
         <button mat-mini-fab color="primary" (click)="sidenav.open()" >
@@ -14,13 +15,11 @@
        </button>
         <app-top-bar></app-top-bar>
       </mat-toolbar>
-        <div class="container">
+      <div class="container">
           <router-outlet></router-outlet>
-        </div>
-        <div class="container">
-          <app-swipe-demo></app-swipe-demo>
-          </div>
+        </div>          
    </mat-sidenav-content>
+   
 </mat-sidenav-container>
 
 
