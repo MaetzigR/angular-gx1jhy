@@ -14,7 +14,7 @@ import { Swiper } from 'swiper';
 export class SwipeDemoComponent {
 
   @ViewChild('usefulSwiper', { static: false }) usefulSwiper: SwiperComponent;
-  
+
   title = 'ng-swiper-demo';
 
   slideData = [
@@ -71,7 +71,7 @@ export class SwipeDemoComponent {
       disableOnInteraction: true
     },
     initialSlide: 1,
-    centeredSlides: true,
+    centeredSlides: false,
    /* breakpoints: {
       1024: {
         slidesPerView: 4
@@ -93,7 +93,7 @@ export class SwipeDemoComponent {
     loop: false,
     on: {
       slideChange: () => {
-        console.log('slideChange Event: Active Slide Index = ', this.usefulSwiper.swiper.activeIndex);
+        //console.log('slideChange Event: Active Slide Index = ', this.usefulSwiper.swiper.activeIndex);
 
       },
       slideChangeTransitionEnd: () => {
