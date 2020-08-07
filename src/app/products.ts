@@ -13,6 +13,16 @@ export const products = [
     name: 'Phone Standard',
     price: 299,
     description: ''
+  },
+  {
+    name: 'ISC Phone',
+    price: 599,
+    description: 'Company phone'
+  },
+  {
+    name: 'Dynamic notify Button Phone',
+    price: 899,
+    description: 'Button abhängig vom Preis angezeigt'
   }
 ];
 

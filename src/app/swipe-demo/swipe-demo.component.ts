@@ -73,7 +73,7 @@ export class SwipeDemoComponent {
     effect: "slide",
     initialSlide: 1,
     centeredSlides: false,
-    slidesPerView: 'auto',
+    slidesPerView: 1,
    /* breakpoints: {
       1024: {
         slidesPerView: 4
