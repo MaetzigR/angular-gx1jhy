@@ -70,6 +70,7 @@ export class SwipeDemoComponent {
       delay: 6000,
       disableOnInteraction: true
     },
+    effect: "slide",
     initialSlide: 1,
     centeredSlides: false,
     slidesPerView: 'auto',
@@ -118,5 +119,13 @@ export class SwipeDemoComponent {
   
   slideToThis(index) {
     this.usefulSwiper.swiper.slideTo(index);
+  }
+
+  doneClicked(index) {
+    alert("done Clicked");
+  }
+
+  deleteClicked(index) {
+    alert("delete Clicked");
   }
 }

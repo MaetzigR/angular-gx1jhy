@@ -7,29 +7,29 @@
       {{slide.name}}
     </div>
 -->
-  <div class="swiper-slide">
+  <div class="swiper-slide" (click)="deleteClicked()">
     <span class="material-icons">
       delete
     </span>
   </div>
 
-<div class="swiper-slide">
+<div class="swiper-slide" >
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/8773Pililla_Rizal_Barangays_Proper_27.jpg/320px-8773Pililla_Rizal_Barangays_Proper_27.jpg" />
   </div>
 
-  <div class="swiper-slide">
+  <div class="swiper-slide" (click)="doneClicked()">
     <span class="material-icons">
       done
     </span>
   </div>
   </div>
 
-  <div class="swiper-button-next" ></div>
+  
   <!-- Add Pagination 
   <div class="swiper-pagination"></div>
 -->
-  <!-- Add Arrows -->
-  
+  <!-- Add Arrows
+  <div class="swiper-button-next" ></div>
   <div class="swiper-button-prev" ></div>
-
+ -->
 </swiper>
