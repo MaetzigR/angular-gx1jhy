@@ -90,7 +90,7 @@ export class SwipeDemoComponent {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    loop: false,
+    loop: true,
     on: {
       slideChange: () => {
         //console.log('slideChange Event: Active Slide Index = ', this.usefulSwiper.swiper.activeIndex);
