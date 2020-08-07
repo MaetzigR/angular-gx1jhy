@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
+import { SwiperComponent } from 'ngx-useful-swiper';
 
 @Component({
   selector: 'app-swipe-demo',
@@ -9,7 +10,7 @@ import { SwiperOptions } from 'swiper';
 export class SwipeDemoComponent {
 
  
-    title = 'ng-swiper-demo';
+  title = 'ng-swiper-demo';
 
   slideData = [
     {
@@ -64,7 +65,9 @@ export class SwipeDemoComponent {
       delay: 6000,
       disableOnInteraction: true
     },
-    breakpoints: {
+    initialSlide: 1,
+    centeredSlides: true,
+   /* breakpoints: {
       1024: {
         slidesPerView: 4
       },
@@ -77,11 +80,28 @@ export class SwipeDemoComponent {
       300: {
         slidesPerView: 1
       }
-    },
+    }, */
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
     loop: false
   };
+
+   usefulSwiper: SwiperComponent;
+
+
+  //Methods
+
+  nextSlide() {
+    this.usefulSwiper.swiper.slideNext();
+  }
+
+  previousSlide() {
+    this.usefulSwiper.swiper.slidePrev();
+  }
+  
+  slideToThis(index) {
+    this.usefulSwiper.swiper.slideTo(index);
+  }
 }
